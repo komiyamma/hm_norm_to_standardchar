@@ -1,0 +1,30 @@
+﻿// jsmodeではなく、「少々意味不明でも何らかの都合により秀丸マクロ」で実行したい人向け
+
+#NORM = createobject(currentmacrodirectory + "\\HmNormToStandardChar.dll", "HmNormToStandardChar.HmNormToStandardChar");
+
+if (!#NORM) {
+    message "HmNormToStandardChar.dllのオブジェクト生成エラー";
+    endmacro;
+}
+
+// ★10万行といった長文でもメモリ溢れが起きないよう、マクロ変数は一切使わない★
+
+// 選択していたら、選択内容を、そうでなければ、全文が対象となる
+if (selecting) {
+    setstaticvariable "HmNormToStandardChar_SrcText", getselectedtext(), -1;
+} else {
+    setstaticvariable "HmNormToStandardChar_SrcText", gettotaltext(), -1;
+}
+
+// 正規化した結果を保持
+setstaticvariable "HmNormToStandardChar_NrmText", member(#NORM, "Normalize", getstaticvariable("HmNormToStandardChar_SrcText", -1)), -1;
+
+// 内容が食い違っていたら更新
+if (getstaticvariable("HmNormToStandardChar_SrcText", -1) != getstaticvariable("HmNormToStandardChar_NrmText", -1)) {
+    // 選択していたら選択部分を更新、そうでないなら、全文を更新
+    if (selecting) {
+        insert getstaticvariable("HmNormToStandardChar_NrmText", -1);
+    }  else {
+        settotaltext getstaticvariable("HmNormToStandardChar_NrmText", -1);
+    }
+}

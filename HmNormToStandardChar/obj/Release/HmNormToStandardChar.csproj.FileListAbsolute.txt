@@ -1,0 +1,6 @@
+C:\Users\master\source\repos\HmNormToStandardChar\HmNormToStandardChar\bin\Release\HmNormToStandardChar.dll
+C:\Users\master\source\repos\HmNormToStandardChar\HmNormToStandardChar\bin\Release\HmNormToStandardChar.pdb
+C:\Users\master\source\repos\HmNormToStandardChar\HmNormToStandardChar\obj\Release\HmNormToStandardChar.csproj.AssemblyReference.cache
+C:\Users\master\source\repos\HmNormToStandardChar\HmNormToStandardChar\obj\Release\HmNormToStandardChar.csproj.CoreCompileInputs.cache
+C:\Users\master\source\repos\HmNormToStandardChar\HmNormToStandardChar\obj\Release\HmNormToStandardChar.dll
+C:\Users\master\source\repos\HmNormToStandardChar\HmNormToStandardChar\obj\Release\HmNormToStandardChar.pdb

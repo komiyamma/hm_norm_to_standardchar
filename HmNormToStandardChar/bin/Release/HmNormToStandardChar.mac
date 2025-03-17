@@ -1,0 +1,32 @@
+﻿jsmode "JScript\\" + currentmacrofilename;
+
+js {
+
+function main() {
+
+    var com = createobject(currentmacrodirectory() + "\\HmNormToStandardChar.dll", "HmNormToStandardChar.HmNormToStandardChar");
+    if (!com) {
+        message("HmNormToStandardChar.dllのオブジェクト生成エラー");
+        return;
+    }
+
+    var srcText = getselectedtext() || gettotaltext();
+
+    var dstText = com.Normalize(srcText);
+
+    // 変化してないなら何もしない
+    if (srcText == dstText) {
+        return;
+    }
+
+    if (selecting()) {
+        insert(dstText);
+    } else {
+        settotaltext(dstText);
+    }
+}
+
+main();
+
+}
+
