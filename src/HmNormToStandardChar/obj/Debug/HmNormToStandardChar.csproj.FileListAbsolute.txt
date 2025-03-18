@@ -4,3 +4,9 @@ C:\Users\master\source\repos\HmNormToStandardChar\HmNormToStandardChar\bin\Debug
 C:\Users\master\source\repos\HmNormToStandardChar\HmNormToStandardChar\bin\Debug\HmNormToStandardChar.pdb
 C:\Users\master\source\repos\HmNormToStandardChar\HmNormToStandardChar\obj\Debug\HmNormToStandardChar.dll
 C:\Users\master\source\repos\HmNormToStandardChar\HmNormToStandardChar\obj\Debug\HmNormToStandardChar.pdb
+G:\repogitory\hm_norm_to_standardchar\src\HmNormToStandardChar\bin\Debug\HmNormToStandardChar.dll
+G:\repogitory\hm_norm_to_standardchar\src\HmNormToStandardChar\bin\Debug\HmNormToStandardChar.pdb
+G:\repogitory\hm_norm_to_standardchar\src\HmNormToStandardChar\obj\Debug\HmNormToStandardChar.csproj.AssemblyReference.cache
+G:\repogitory\hm_norm_to_standardchar\src\HmNormToStandardChar\obj\Debug\HmNormToStandardChar.csproj.CoreCompileInputs.cache
+G:\repogitory\hm_norm_to_standardchar\src\HmNormToStandardChar\obj\Debug\HmNormToStandardChar.dll
+G:\repogitory\hm_norm_to_standardchar\src\HmNormToStandardChar\obj\Debug\HmNormToStandardChar.pdb

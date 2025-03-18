@@ -75,10 +75,12 @@ public class HmNormToStandardChar
         }
 
         var textNFC = text.Normalize(System.Text.NormalizationForm.FormC);
+        /*
         if (CanConvertSJIS(textNFC))
         {
             return textNFC;
         }
+        */
         if (text != textNFC)
         {
             return textNFC;
